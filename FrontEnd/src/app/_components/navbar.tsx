@@ -12,13 +12,27 @@ import {
   NavigationMenuViewport,
 } from "../../components/ui/navigation-menu";
 import { ModeToggle } from "./darktoggle";
+import Image from "next/image";
 
 const Navbar = () => {
   return (
     <>
       <div className="flex justify-between items-center w-full px-[130px] py-2 ">
         <div>
-          <h1>Logo</h1>
+          <Image
+            src="/img/logo.png" // or from /public folder
+            alt="Example image"
+            width={200}
+            height={200}
+            className=" dark:hidden "
+          />
+          <Image
+            src="/img/logo1.png" // or from /public folder
+            alt="Example image"
+            width={200}
+            height={200}
+            className="dark:block hidden "
+          />
         </div>
         <div className="relative">
           <NavigationMenu>
