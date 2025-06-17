@@ -41,7 +41,7 @@ const Navbar = () => {
               {/* Home */}
               <NavigationMenuItem>
                 <NavigationMenuLink asChild>
-                  <Link href="/" className="px-4 py-2 hover:underline">
+                  <Link href="/" className="px-4 py-2">
                     Home
                   </Link>
                 </NavigationMenuLink>
@@ -50,7 +50,7 @@ const Navbar = () => {
               {/* Internship */}
               <NavigationMenuItem>
                 <NavigationMenuLink asChild>
-                  <Link href="/" className="px-4 py-2 hover:underline">
+                  <Link href="/" className="px-4 py-2">
                     Internship
                   </Link>
                 </NavigationMenuLink>
@@ -59,7 +59,7 @@ const Navbar = () => {
               {/* Job */}
               <NavigationMenuItem>
                 <NavigationMenuLink asChild>
-                  <Link href="/" className="px-4 py-2 hover:underline">
+                  <Link href="/" className="px-4 py-2">
                     Job
                   </Link>
                 </NavigationMenuLink>
@@ -73,17 +73,17 @@ const Navbar = () => {
                     <NavigationMenuTrigger>Events</NavigationMenuTrigger>
                     <NavigationMenuContent>
                       <NavigationMenuLink className="w-20" asChild>
-                        <Link href="/" className="px-4 py-2 hover:underline">
+                        <Link href="/" className="px-4 py-2">
                           Link 1
                         </Link>
                       </NavigationMenuLink>
                       <NavigationMenuLink className="w-20" asChild>
-                        <Link href="/" className="px-4 py-2 hover:underline">
+                        <Link href="/" className="px-4 py-2">
                           Link 2
                         </Link>
                       </NavigationMenuLink>
                       <NavigationMenuLink className="w-20" asChild>
-                        <Link href="/" className="px-4 py-2 hover:underline">
+                        <Link href="/" className="px-4 py-2">
                           Link 3
                         </Link>
                       </NavigationMenuLink>

@@ -6,9 +6,11 @@ import { ButtonDemo } from "../_components/button";
 import VacancyCard from "../_components/vacancyCard";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
+import Feature from "../_components/feature"
 
 function page() {
   return (
+    <>
     <div className="dark:bg-[#000000]">
       <Navbar />
       <Herotitle />
@@ -45,6 +47,11 @@ function page() {
       </div>
       <VacancyCard />
     </div>
+
+    <div>
+      <Feature/>
+    </div>
+    </>
   );
 }
 
