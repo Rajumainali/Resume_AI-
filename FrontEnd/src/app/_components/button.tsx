@@ -1,12 +1,13 @@
 import { Button } from "../../components/ui/button";
 interface ButtonDemoProps {
   name: string;
+  className?: string;
 }
 
-export function ButtonDemo({ name }: ButtonDemoProps) {
+export function ButtonDemo({ name, className }: ButtonDemoProps) {
   return (
     <div className="flex flex-wrap items-center gap-2 md:flex-row">
-      <Button>{name}</Button>
+      <Button className={className}>{name}</Button>
     </div>
   );
 }

@@ -13,6 +13,7 @@ import {
 } from "../../components/ui/navigation-menu";
 import { ModeToggle } from "./darktoggle";
 import Image from "next/image";
+import { ButtonDemo } from "../_components/button";
 
 const Navbar = () => {
   return (
