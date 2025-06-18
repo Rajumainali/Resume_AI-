@@ -1,3 +1,4 @@
+'use Client';
 import React from "react";
 
 import { HeroHighlight, Highlight } from "../../components/ui/hero-highlight";
@@ -7,7 +8,7 @@ function herotitle() {
   return (
     <>
       <HeroHighlight className="flex flex-col justify-center items-center  text-center">
-        <span className="text-5xl mb-4">Connect with top internships and</span>
+        <span className="text-5xl mb-4">Connect with top Opportunities and</span>
         <Highlight className="text-black dark:text-white text-5xl">
           leading companies
         </Highlight>

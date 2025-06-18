@@ -12,13 +12,28 @@ import {
   NavigationMenuViewport,
 } from "../../components/ui/navigation-menu";
 import { ModeToggle } from "./darktoggle";
+import Image from "next/image";
+import { ButtonDemo } from "../_components/button";
 
 const Navbar = () => {
   return (
     <>
       <div className="flex justify-between items-center w-full px-[130px] py-2 ">
         <div>
-          <h1>Logo</h1>
+          <Image
+            src="/img/logo.png" // or from /public folder
+            alt="Example image"
+            width={200}
+            height={200}
+            className=" dark:hidden "
+          />
+          <Image
+            src="/img/logo1.png" // or from /public folder
+            alt="Example image"
+            width={200}
+            height={200}
+            className="dark:block hidden "
+          />
         </div>
         <div className="relative">
           <NavigationMenu>
@@ -26,7 +41,7 @@ const Navbar = () => {
               {/* Home */}
               <NavigationMenuItem>
                 <NavigationMenuLink asChild>
-                  <Link href="/" className="px-4 py-2 hover:underline">
+                  <Link href="/" className="px-4 py-2">
                     Home
                   </Link>
                 </NavigationMenuLink>
@@ -35,7 +50,7 @@ const Navbar = () => {
               {/* Internship */}
               <NavigationMenuItem>
                 <NavigationMenuLink asChild>
-                  <Link href="/" className="px-4 py-2 hover:underline">
+                  <Link href="/" className="px-4 py-2">
                     Internship
                   </Link>
                 </NavigationMenuLink>
@@ -44,7 +59,7 @@ const Navbar = () => {
               {/* Job */}
               <NavigationMenuItem>
                 <NavigationMenuLink asChild>
-                  <Link href="/" className="px-4 py-2 hover:underline">
+                  <Link href="/" className="px-4 py-2">
                     Job
                   </Link>
                 </NavigationMenuLink>
@@ -58,17 +73,17 @@ const Navbar = () => {
                     <NavigationMenuTrigger>Events</NavigationMenuTrigger>
                     <NavigationMenuContent>
                       <NavigationMenuLink className="w-20" asChild>
-                        <Link href="/" className="px-4 py-2 hover:underline">
+                        <Link href="/" className="px-4 py-2">
                           Link 1
                         </Link>
                       </NavigationMenuLink>
                       <NavigationMenuLink className="w-20" asChild>
-                        <Link href="/" className="px-4 py-2 hover:underline">
+                        <Link href="/" className="px-4 py-2">
                           Link 2
                         </Link>
                       </NavigationMenuLink>
                       <NavigationMenuLink className="w-20" asChild>
-                        <Link href="/" className="px-4 py-2 hover:underline">
+                        <Link href="/" className="px-4 py-2">
                           Link 3
                         </Link>
                       </NavigationMenuLink>
