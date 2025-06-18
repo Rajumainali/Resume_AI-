@@ -45,12 +45,13 @@ function page() {
           <ChevronRight />
         </div>
       </div>
-      <VacancyCard />
+        <VacancyCard />
+        <Feature/>
     </div>
 
-    <div>
-      <Feature/>
-    </div>
+    
+      
+    
     </>
   );
 }
