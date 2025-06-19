@@ -1,13 +1,23 @@
+"use client";
 import React from 'react'
 import { ButtonDemo } from './button'
 
 export default function feature() {
   return (
+<<<<<<< HEAD
     <div className='flex justify-center items-center flex-col mt-10 mb-10 dark:bg-black'>
       <ButtonDemo 
         name='Why QuickRecruit' 
         className="relative border-2 border-blue-500 text-blue-600 px-8 py-3 rounded-full hover:bg-blue-500 hover:text-white hover:border-blue-600 transition-all duration-500 ease-out bg-transparent font-medium text-sm uppercase tracking-wide shadow-lg hover:shadow-2xl hover:shadow-blue-500/25 transform hover:-translate-y-1 hover:scale-105 active:translate-y-0 active:scale-100 group overflow-hidden"
       ></ButtonDemo>
+=======
+   <div className='flex justify-center items-center flex-col mt-10 mb-10'>
+<ButtonDemo
+  name="Why Quick Recurit"
+  className="bg-[#3d3d3d] hover:bg-[#555555] px-6 py-2 rounded-full text-white transition duration-300 dark:text-[#ececec]"
+/>
+
+>>>>>>> Raju
       <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 mt-6 dark:text-zinc-200">New way to get Job</h1>
       
       <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed text-center mb-16 dark:text-zinc-400">
@@ -19,7 +29,11 @@ export default function feature() {
       {/* Features Grid */}
       <div className="grid md:grid-cols-4 gap-8 max-w-7xl mx-auto">
         {/* Feature 1 */}
+<<<<<<< HEAD
         <div className="bg-white rounded-2xl p-8 shadow-sm border dark:border-[#3D3D3D] hover:shadow-md transition-shadow duration-300 dark:bg-[#3D3D3D] ">
+=======
+        <div className="bg-white rounded-2xl p-8 shadow-sm border dark:border-zinc-400 hover:shadow-md transition-shadow duration-300 dark:bg-[#3D3D3D] ">
+>>>>>>> Raju
           <div className="mb-6">
             <div className="w-12 h-12 bg-gradient-to-br from-blue-400 to-green-400 rounded-xl flex items-center justify-center">
               <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -27,16 +41,27 @@ export default function feature() {
               </svg>
             </div>
           </div>
+<<<<<<< HEAD
           <h3 className="text-xl font-semibold dark:text-amber-50 mb-4">
             Manage candidates easily
           </h3>
           <p className="dark:text-amber-100 leading-relaxed">
+=======
+          <h3 className="text-xl font-semibold text-gray-900 mb-4 dark:text-[#ECECEC]">
+            Manage candidates easily
+          </h3>
+          <p className="text-gray-600 leading-relaxed dark:text-[#ECECEC]">
+>>>>>>> Raju
             Our easy-to-use software lets you evaluate candidates and move them faster.
           </p>
         </div>
 
         {/* Feature 2 */}
+<<<<<<< HEAD
         <div className="bg-white rounded-2xl p-8 shadow-sm border dark:border-[#3D3D3D] hover:shadow-md transition-shadow duration-300 dark:bg-[#3D3D3D] ">
+=======
+        <div className="bg-white rounded-2xl p-8 shadow-sm border dark:border-zinc-400 hover:shadow-md transition-shadow duration-300 dark:bg-[#3D3D3D]">
+>>>>>>> Raju
           <div className="mb-6">
             <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-orange-400 rounded-xl flex items-center justify-center">
               <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -44,16 +69,27 @@ export default function feature() {
               </svg>
             </div>
           </div>
+<<<<<<< HEAD
           <h3 className="text-xl font-semibold dark:text-amber-50 mb-4">
             User-friendly hiring software
           </h3>
           <p className="dark:text-amber-100 leading-relaxed">
+=======
+          <h3 className="text-xl font-semibold text-gray-900 mb-4 dark:text-[#ECECEC]">
+            User-friendly hiring software
+          </h3>
+          <p className="text-gray-600 leading-relaxed dark:text-[#ECECEC]">
+>>>>>>> Raju
             Make it easy and quick for top candidates to find your jobs.
           </p>
         </div>
 
         {/* Feature 3 */}
+<<<<<<< HEAD
         <div className="bg-white rounded-2xl p-8 shadow-sm border dark:border-[#3D3D3D] hover:shadow-md transition-shadow duration-300 dark:bg-[#3D3D3D] ">
+=======
+        <div className="bg-white rounded-2xl p-8 shadow-sm border dark:border-zinc-400 hover:shadow-md transition-shadow duration-300 dark:bg-[#3d3d3d]">
+>>>>>>> Raju
           <div className="mb-6">
             <div className="w-12 h-12 bg-gradient-to-br from-purple-400 to-blue-400 rounded-xl flex items-center justify-center">
               <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -61,15 +97,26 @@ export default function feature() {
             </svg>
           </div>
         </div>
+<<<<<<< HEAD
         <h3 className="text-xl font-semibold dark:text-amber-50 mb-4">
           Make the perfect hire
         </h3>
         <p className="dark:text-amber-100 leading-relaxed">
+=======
+        <h3 className="text-xl font-semibold text-gray-900 mb-4 dark:text-[#ECECEC]">
+          Make the perfect hire
+        </h3>
+        <p className="text-gray-600 leading-relaxed dark:text-[#ECECEC]">
+>>>>>>> Raju
           Reduce hiring time by finding qualified candidates quickly and easily.
         </p>
         </div>
          {/* Feature 4 */}
+<<<<<<< HEAD
         <div className="bg-white rounded-2xl p-8 shadow-sm border dark:border-[#3D3D3D] hover:shadow-md transition-shadow duration-300 dark:bg-[#3D3D3D] ">
+=======
+        <div className="bg-white rounded-2xl p-8 shadow-sm border dark:border-zinc-400 hover:shadow-md transition-shadow duration-300 dark:bg-[#3d3d3d]">
+>>>>>>> Raju
           <div className="mb-6">
             <div className="w-12 h-12 bg-gradient-to-br from-purple-400 to-blue-400 rounded-xl flex items-center justify-center">
               <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -77,10 +124,17 @@ export default function feature() {
             </svg>
           </div>
         </div>
+<<<<<<< HEAD
         <h3 className="text-xl font-semibold dark:text-amber-50 mb-4">
           AI Resume Analyzer
         </h3>
         <p className="dark:text-amber-100 leading-relaxed">
+=======
+        <h3 className="text-xl font-semibold text-gray-900 mb-4 dark:text-[#ECECEC]">
+          AI Resume Analyzer
+        </h3>
+        <p className="text-gray-600 leading-relaxed dark:text-[#ECECEC]">
+>>>>>>> Raju
           Reduce hiring time by finding qualified candidates quickly and easily.
         </p>
       </div>
