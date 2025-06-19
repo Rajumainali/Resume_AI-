@@ -1,5 +1,6 @@
 import React from 'react'
 import { ButtonDemo } from './button'
+
 export default function feature() {
   return (
    <div className='flex justify-center items-center flex-col mt-10 mb-10'>
