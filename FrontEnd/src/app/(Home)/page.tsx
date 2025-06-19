@@ -44,11 +44,9 @@ function page() {
           <Link href={"/"}>Browse all Jobs</Link>
           <ChevronRight />
         </div>
+
       </div>
       <VacancyCard />
-    </div>
-
-    <div>
       <Feature/>
     </div>
     </>
