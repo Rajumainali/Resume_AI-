@@ -62,7 +62,7 @@ export default function loginandSignupprocess() {
                     candidate
                   </div>
                 </p>
-                <p className="text-gray-500 flex gap-3  ">
+                <div className="text-gray-500 flex gap-3  ">
                   <Check
                     color="white"
                     height={20}
@@ -75,7 +75,7 @@ export default function loginandSignupprocess() {
                     </span>
                     Create account that will engage your profile.
                   </div>
-                </p>
+                </div>
               </div>
             </div>
           </div>
