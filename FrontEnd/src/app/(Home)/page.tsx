@@ -9,6 +9,7 @@ import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 import Feature from "../_components/feature";
 import LoginandSignupprocess from "../_components/loginandSignupprocess";
+import Discoverjob from "../_components/Discoverjob";
 
 function page() {
   return (
@@ -52,6 +53,7 @@ function page() {
         <VacancyCard />
         <Feature />
         <LoginandSignupprocess />
+        <Discoverjob />
       </div>
     </>
   );
