@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Herotitle from "../_components/herotitle";
-import Navbar from "../_components/navbar";
+// import Navbar from "../_components/navbar";
 import Card from "../_components/cards";
 import { ButtonDemo } from "../_components/button";
 import VacancyCard from "../_components/vacancyCard";
@@ -12,13 +12,13 @@ import LoginandSignupprocess from "../_components/loginandSignupprocess";
 import Discoverjob from "../_components/Discoverjob";
 import JobAlertBanner from "../_components/alertjob";
 import Faq from "../_components/Faq";
-import Footer from "../_components/footer";
+// import Footer from "../_components/footer";
 
 function page() {
   return (
     <>
       <div className="dark:bg-[#000000]">
-        <Navbar />
+        {/* <Navbar /> */}
         <Herotitle />
         <Card />
         <div className="flex flex-row justify-around gap-9  w-full  mt-28">
@@ -59,7 +59,6 @@ function page() {
         <Discoverjob />
         <JobAlertBanner />
         <Faq />
-        <Footer />
       </div>
     </>
   );

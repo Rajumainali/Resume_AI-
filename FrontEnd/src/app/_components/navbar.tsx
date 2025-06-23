@@ -18,8 +18,8 @@ import { ButtonDemo } from "../_components/button";
 const Navbar = () => {
   return (
     <>
-      <div className="flex justify-between items-center w-full px-[130px] py-2 ">
-        <div>
+      <div className="flex justify-between items-center w-full     py-2 ">
+        <div className="ml-6">
           <Image
             src="/img/logo.png" // or from /public folder
             alt="Example image"
@@ -67,24 +67,29 @@ const Navbar = () => {
 
               {/* Events dropdown */}
 
+              <NavigationMenuItem>
+                <NavigationMenuLink asChild>
+                  <Link href="/login" className="px-4 py-2">
+                    Login
+                  </Link>
+                </NavigationMenuLink>
+              </NavigationMenuItem>
               <NavigationMenu>
                 <NavigationMenuList>
                   <NavigationMenuItem>
-                    <NavigationMenuTrigger>Events</NavigationMenuTrigger>
+                    {/* data-[state=open]:bg-[#CBB2FF] helps for invisible when the trigger is unfocuse */}
+                    <NavigationMenuTrigger className="bg-[#CBB2FF] hover:!bg-[#c7bae4] dark:text-black transition-none focus:bg-[#CBB2FF] data-[state=open]:bg-[#CBB2FF] ">
+                      Register
+                    </NavigationMenuTrigger>
                     <NavigationMenuContent>
-                      <NavigationMenuLink className="w-20" asChild>
-                        <Link href="/" className="px-4 py-2">
-                          Link 1
+                      <NavigationMenuLink className="w-48" asChild>
+                        <Link href="/register/candidate" className="px-4 py-2">
+                          Register as candidate
                         </Link>
                       </NavigationMenuLink>
-                      <NavigationMenuLink className="w-20" asChild>
-                        <Link href="/" className="px-4 py-2">
-                          Link 2
-                        </Link>
-                      </NavigationMenuLink>
-                      <NavigationMenuLink className="w-20" asChild>
-                        <Link href="/" className="px-4 py-2">
-                          Link 3
+                      <NavigationMenuLink className="w-48" asChild>
+                        <Link href="/register/recruiter" className="px-4 py-2">
+                          Register as recruiter
                         </Link>
                       </NavigationMenuLink>
                     </NavigationMenuContent>
@@ -93,8 +98,8 @@ const Navbar = () => {
               </NavigationMenu>
             </NavigationMenuList>
 
-            <ModeToggle />
             <NavigationMenuViewport />
+            <ModeToggle />
           </NavigationMenu>
         </div>
       </div>
