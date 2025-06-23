@@ -10,6 +10,9 @@ import { ChevronRight } from "lucide-react";
 import Feature from "../_components/feature";
 import LoginandSignupprocess from "../_components/loginandSignupprocess";
 import Discoverjob from "../_components/Discoverjob";
+import JobAlertBanner from "../_components/alertjob";
+import Faq from "../_components/Faq";
+import Footer from "../_components/footer";
 
 function page() {
   return (
@@ -54,6 +57,9 @@ function page() {
         <Feature />
         <LoginandSignupprocess />
         <Discoverjob />
+        <JobAlertBanner />
+        <Faq />
+        <Footer />
       </div>
     </>
   );
