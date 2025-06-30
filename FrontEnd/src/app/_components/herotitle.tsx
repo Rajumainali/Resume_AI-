@@ -14,7 +14,7 @@ function herotitle() {
         </Highlight>
 
         <p className="mt-8 text-gray-800 text-[20px] dark:text-white">
-          Your path to exciting internships starts with us.
+          Your path to exciting opportunities begins here.
         </p>
         <Inputs />
         <div className="flex flex-row justify-center items-center mt-3.5">

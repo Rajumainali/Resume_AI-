@@ -22,8 +22,7 @@ function cards() {
       <div className="flex flex-col justify-between bg-[#3D3D3D] px-10 py-10 rounded-3xl h-[300px] my-3 w-[550px] relative overflow-hidden">
         <h1 className="text-amber-50 text-2xl font-bold z-10">For Employer or Company</h1>
         <p className="text-amber-50 z-10 w-[350px]">
-          Unlock endless opportunities and connect with top employers. Let your
-          skills shine and land your dream job.
+          Access a pool of skilled candidates and streamline your hiring process. Find the best talent for your company's success
         </p>
         <ButtonDemo name="Start Hiring" />
         <Image src={"/img/hiring.png"} alt="No candidate Image"

@@ -1,5 +1,4 @@
 import "./globals.css";
-
 import { Inter } from "next/font/google";
 import { ThemeProvider } from "../components/ui/theme-provider";
 
@@ -9,13 +8,18 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
+export const metadata = {
+  title: "QuickRecruit",
+  description: "Resume Ranking AI platform",
+};
+
 export default function DashboardLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={inter.className} suppressHydrationWarning>
+    <html lang="en" className={`${inter.className}`} suppressHydrationWarning>
       <body>
         <ThemeProvider
           attribute="class"

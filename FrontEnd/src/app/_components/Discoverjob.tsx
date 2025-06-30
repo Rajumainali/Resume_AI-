@@ -92,15 +92,15 @@ export default function Discoverjob() {
       <div className="max-w-4xl mx-auto p-6 ">
         {/* Tab Navigation */}
         <div className="flex justify-center mb-8">
-          <div className="flex bg-white rounded-full p-1 shadow-sm">
+          <div className="flex bg-[#3d3d3d] rounded-full p-1 shadow-sm">
             {["Popular", "Lastest"].map((tab) => (
               <button
                 key={tab}
                 onClick={() => setSelectedTab(tab)}
                 className={`px-6 py-2 rounded-full text-sm font-medium transition-all ${
                   selectedTab === tab
-                    ? "bg-blue-500 text-white shadow-md"
-                    : "text-gray-600 hover:text-gray-800"
+                    ? "bg-[#605151] text-white shadow-md"
+                    : "text-white hover:text-white"
                 }`}
               >
                 {tab}

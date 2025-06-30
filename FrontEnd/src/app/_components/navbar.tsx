@@ -65,26 +65,36 @@ const Navbar = () => {
                 </NavigationMenuLink>
               </NavigationMenuItem>
 
+
+                {/* Login */}
+              <NavigationMenuItem>
+                <NavigationMenuLink asChild>
+                  <Link href="/" className="px-4 py-2">
+                    Login
+                  </Link>
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+
               {/* Events dropdown */}
 
               <NavigationMenu>
                 <NavigationMenuList>
                   <NavigationMenuItem>
-                    <NavigationMenuTrigger>Events</NavigationMenuTrigger>
+                    <NavigationMenuTrigger>Register</NavigationMenuTrigger>
                     <NavigationMenuContent>
-                      <NavigationMenuLink className="w-20" asChild>
-                        <Link href="/" className="px-4 py-2">
-                          Link 1
+                      <NavigationMenuLink className="w-45" asChild>
+                        <Link href="/" className="px-2 py-2">
+                          Register as a Candidate
                         </Link>
                       </NavigationMenuLink>
-                      <NavigationMenuLink className="w-20" asChild>
-                        <Link href="/" className="px-4 py-2">
-                          Link 2
+                      <NavigationMenuLink className="w-45" asChild>
+                        <Link href="/" className="px-2 py-2">
+                          Register as a Recurter 
                         </Link>
                       </NavigationMenuLink>
-                      <NavigationMenuLink className="w-20" asChild>
-                        <Link href="/" className="px-4 py-2">
-                          Link 3
+                      <NavigationMenuLink className="w-45" asChild>
+                        <Link href="/" className="px-2 py-2">
+                          Register as a Admin
                         </Link>
                       </NavigationMenuLink>
                     </NavigationMenuContent>
