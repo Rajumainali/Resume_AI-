@@ -53,16 +53,6 @@ function page() {
         <Feature />
         <LoginandSignupprocess />
       </div>
-<<<<<<< HEAD
-        <VacancyCard />
-        <Feature/>
-    </div>
-
-    
-      
-    
-=======
->>>>>>> Raju
     </>
   );
 }
