@@ -11,7 +11,7 @@ export function Inputs() {
         <Input
           type="text"
           placeholder="Enter the title, Keyword phrase"
-          className="flex-1"
+          className="flex-1 "
         />
         <Search className="absolute flex justify-center items-center right-3 top-1/2 transform -translate-y-1/2 text-white-500 w-8 h-8  rounded-[50%] dark:bg-[#000000]" />
       </div>

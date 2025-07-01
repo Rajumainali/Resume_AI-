@@ -48,7 +48,7 @@ export default function loginandSignupprocess() {
               </p>
               <span className="w-[400px] h-[1px] bg-gray-600 mt-2.5"></span>
               <div className="flex flex-col gap-6 mt-7 ">
-                <p className="text-gray-500 flex gap-3 ">
+                <div className="text-gray-500 flex gap-3 ">
                   <Check
                     color="white"
                     size={20}
@@ -61,8 +61,8 @@ export default function loginandSignupprocess() {
                     Easily collaborate with teams to find & hire the right
                     candidate
                   </div>
-                </p>
-                <p className="text-gray-500 flex gap-3  ">
+                </div>
+                <div className="text-gray-500 flex gap-3  ">
                   <Check
                     color="white"
                     height={20}
@@ -75,7 +75,7 @@ export default function loginandSignupprocess() {
                     </span>
                     Create account that will engage your profile.
                   </div>
-                </p>
+                </div>
               </div>
             </div>
           </div>
@@ -103,7 +103,7 @@ export default function loginandSignupprocess() {
               </p>
               <span className="w-[400px] h-[1px] bg-gray-600 mt-2.5"></span>
               <div className="flex flex-col gap-6 mt-7 ">
-                <p className="text-gray-500 flex gap-3 ">
+                <div className="text-gray-500 flex gap-3 ">
                   <Check
                     color="white"
                     size={20}
@@ -116,8 +116,8 @@ export default function loginandSignupprocess() {
                     Easily collaborate with teams to find & hire the right
                     candidate
                   </div>
-                </p>
-                <p className="text-gray-500 flex gap-3  ">
+                </div>
+                <div className="text-gray-500 flex gap-3  ">
                   <Check
                     color="white"
                     height={20}
@@ -130,7 +130,7 @@ export default function loginandSignupprocess() {
                     </span>
                     Create account that will engage your profile.
                   </div>
-                </p>
+                </div>
               </div>
             </div>
           </div>
@@ -157,7 +157,7 @@ export default function loginandSignupprocess() {
               </p>
               <span className="w-[400px] h-[1px] bg-gray-600 mt-2.5"></span>
               <div className="flex flex-col gap-6 mt-7 ">
-                <p className="text-gray-500 flex gap-3 ">
+                <div className="text-gray-500 flex gap-3 ">
                   <Check
                     color="white"
                     size={20}
@@ -170,8 +170,8 @@ export default function loginandSignupprocess() {
                     Easily collaborate with teams to find & hire the right
                     candidate
                   </div>
-                </p>
-                <p className="text-gray-500 flex gap-3  ">
+                </div>
+                <div className="text-gray-500 flex gap-3  ">
                   <Check
                     color="white"
                     height={20}
@@ -184,7 +184,7 @@ export default function loginandSignupprocess() {
                     </span>
                     Create account that will engage your profile.
                   </div>
-                </p>
+                </div>
               </div>
             </div>
           </div>
@@ -211,7 +211,7 @@ export default function loginandSignupprocess() {
               </p>
               <span className="w-[400px] h-[1px] bg-gray-600 mt-2.5"></span>
               <div className="flex flex-col gap-6 mt-7 ">
-                <p className="text-gray-500 flex gap-3 ">
+                <div className="text-gray-500 flex gap-3 ">
                   <Check
                     color="white"
                     size={20}
@@ -224,8 +224,8 @@ export default function loginandSignupprocess() {
                     Easily collaborate with teams to find & hire the right
                     candidate
                   </div>
-                </p>
-                <p className="text-gray-500 flex gap-3  ">
+                </div>
+                <div className="text-gray-500 flex gap-3  ">
                   <Check
                     color="white"
                     height={20}
@@ -238,7 +238,7 @@ export default function loginandSignupprocess() {
                     </span>
                     Create account that will engage your profile.
                   </div>
-                </p>
+                </div>
               </div>
             </div>
           </div>
