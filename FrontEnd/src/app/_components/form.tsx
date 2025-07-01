@@ -1,17 +1,50 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Label } from "../../components/ui/label";
 import { Input } from "../../components/ui/input1";
 import { cn } from "@/lib/utils";
 import { IconBrandGoogle } from "@tabler/icons-react";
+import { toast } from "react-hot-toast";
+import { useRouter } from "next/navigation";
+
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL;
 
 export function LoginFormDemo() {
   const [keepSignedIn, setKeepSignedIn] = useState(true);
   const [passwords, setpasswords] = useState(true);
+  const router = useRouter();
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const [formData, setFormData] = useState({
+    email: "",
+    password: "",
+  });
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    alert("Form submitted!"); // Replace with actual form submission logic
+    const res = await fetch(`${API_BASE_URL}auth/login`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+    const data = await res.json();
+    if (res.ok) {
+      toast.success("Login successful");
+      localStorage.setItem("token", data.token);
+      localStorage.setItem("role", data.role); // <-- Store role
+
+      router.replace(
+        data.role === "candidate"
+          ? "/dashboard/candidate"
+          : "/dashboard/recruiter"
+      );
+    } else {
+      toast.error(data.message || "Login failed");
+    }
   };
 
   return (
@@ -25,8 +58,10 @@ export function LoginFormDemo() {
           <Label htmlFor="email">Email*</Label>
           <Input
             id="email"
-            placeholder="mainaliujjwol7@gmail.com"
+            placeholder="test@gmail.com"
             type="email"
+            onChange={handleChange}
+            name="email"
           />
         </LabelInputContainer>
 
@@ -40,8 +75,9 @@ export function LoginFormDemo() {
           <div className="relative mt-2">
             <Input
               id="password"
-              placeholder="••••••••••••"
               type={passwords ? "password" : "text"}
+              onChange={handleChange}
+              name="password"
             />
             <button
               type="button"

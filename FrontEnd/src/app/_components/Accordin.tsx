@@ -16,7 +16,7 @@ export function AccordionDemo() {
         value="item-1"
         className="border border-gray-200 rounded-lg px-6 py-2 bg-white dark:bg-zinc-800 dark:border-zinc-700"
       >
-        <AccordionTrigger className="text-left text-gray-700 dark:text-zinc-200 hover:no-underline py-4 text-base font-medium">
+        <AccordionTrigger className="text-left text-gray-700 dark:text-zinc-200 hover:no-underline py-4 text-base font-medium cursor-pointer">
           What's the benefits of QuickRecruit?
         </AccordionTrigger>
         <AccordionContent className="text-gray-600 dark:text-zinc-400 pb-4 text-sm leading-relaxed">
@@ -31,7 +31,7 @@ export function AccordionDemo() {
         value="item-2"
         className="border border-gray-200 rounded-lg px-6 py-2 bg-white dark:bg-zinc-800 dark:border-zinc-700"
       >
-        <AccordionTrigger className="text-left text-gray-700 dark:text-zinc-200 hover:no-underline py-4 text-base font-medium">
+        <AccordionTrigger className="text-left text-gray-700 dark:text-zinc-200 hover:no-underline py-4 text-base font-medium cursor-pointer">
           What's the benefits of QuickRecruit?
         </AccordionTrigger>
         <AccordionContent className="text-gray-600 dark:text-zinc-400 pb-4 text-sm leading-relaxed">
@@ -47,7 +47,7 @@ export function AccordionDemo() {
         value="item-3"
         className="border border-gray-200 rounded-lg px-6 py-2 bg-white dark:bg-zinc-800 dark:border-zinc-700"
       >
-        <AccordionTrigger className="text-left text-gray-700 dark:text-zinc-200 hover:no-underline py-4 text-base font-medium">
+        <AccordionTrigger className="text-left text-gray-700 dark:text-zinc-200 hover:no-underline py-4 text-base font-medium cursor-pointer">
           What's the benefits of QuickRecruit?
         </AccordionTrigger>
         <AccordionContent className="text-gray-600 dark:text-zinc-400 pb-4 text-sm leading-relaxed">
@@ -63,7 +63,7 @@ export function AccordionDemo() {
         value="item-4"
         className="border border-gray-200 rounded-lg px-6 py-2 bg-white dark:bg-zinc-800 dark:border-zinc-700"
       >
-        <AccordionTrigger className="text-left text-gray-700 dark:text-zinc-200 hover:no-underline py-4 text-base font-medium">
+        <AccordionTrigger className="text-left text-gray-700 dark:text-zinc-200 hover:no-underline py-4 text-base font-medium cursor-pointer">
           What's the benefits of QuickRecruit?
         </AccordionTrigger>
         <AccordionContent className="text-gray-600 dark:text-zinc-400 pb-4 text-sm leading-relaxed">

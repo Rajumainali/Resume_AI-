@@ -1,5 +1,6 @@
 import React from "react";
-import { LoginFormDemo } from "../_components/form";
+import { LoginFormDemo } from "../../_components/form";
+import LayoutWrapper from "../../_components/LayoutWrapper";
 
 function page() {
   return (

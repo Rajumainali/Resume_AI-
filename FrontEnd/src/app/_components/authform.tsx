@@ -4,14 +4,85 @@ import { Label } from "../../components/ui/label";
 import { Input } from "../../components/ui/input1";
 import { cn } from "@/lib/utils";
 import { IconBrandGoogle } from "@tabler/icons-react";
+import { toast } from "react-hot-toast";
+import { useRouter } from "next/navigation";
+import { useEffect } from "react";
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL;
 
 interface AuthformProps {
   onCandidateLogin?: boolean;
 }
 
 export function Authform({ onCandidateLogin }: AuthformProps) {
+  const router = useRouter();
   const [keepSignedIn, setKeepSignedIn] = useState(false);
   const [passwords, setpasswords] = useState(true);
+  const [showConfirmPassword, setShowConfirmPassword] = useState(true);
+
+  const [formData, setFormData] = useState({
+    email: "",
+    password: "",
+    confirmPassword: "",
+  });
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    const { email, password, confirmPassword } = formData;
+
+    // ✅ Basic validations
+    if (!email || !password || !confirmPassword) {
+      toast.error("All fields are required.");
+      return;
+    }
+
+    // ✅ Password match check
+    if (password !== confirmPassword) {
+      toast.error("Passwords do not match.");
+      return;
+    }
+
+    // ✅ Password strength check
+    const passwordRegex =
+      /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?]).{8,}$/;
+
+    if (!passwordRegex.test(password)) {
+      toast.error(
+        "Password must be at least 8 characters and include uppercase, lowercase, number, and special character.",
+        { duration: 7000 }
+      );
+      return;
+    }
+
+    const payload = {
+      ...formData,
+      role: onCandidateLogin ? "candidate" : "recruiter",
+    };
+
+    try {
+      const res = await fetch(`${API_BASE_URL}auth/signup`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+
+      const data = await res.json();
+
+      if (res.ok) {
+        toast.success("Signup successful!");
+        setFormData({ email: "", password: "", confirmPassword: "" });
+        router.replace("/login");
+      } else {
+        toast.error(data?.message || "Signup failed. Try again.");
+      }
+    } catch (error) {
+      toast.error("Signup error! Please try again.");
+      console.error("Signup error:", error);
+    }
+  };
 
   return (
     <div className="shadow-input mx-auto w-[490px]  rounded-2xl bg-white p-8  dark:bg-black ">
@@ -19,7 +90,7 @@ export function Authform({ onCandidateLogin }: AuthformProps) {
         Create an account. It's fast & easy.
       </h2>
 
-      <form className="mt-8 ">
+      <form className="mt-8 " onSubmit={handleSubmit}>
         <LabelInputContainer className="mb-6">
           <Label htmlFor="email">
             {onCandidateLogin ? "Email*" : "Company Email*"}
@@ -31,6 +102,8 @@ export function Authform({ onCandidateLogin }: AuthformProps) {
                 ? "mainaliujjwol7@gmail.com"
                 : "bajarkochirfar@gmail.com"
             }
+            onChange={handleChange}
+            name="email"
             type="email"
           />
         </LabelInputContainer>
@@ -45,8 +118,9 @@ export function Authform({ onCandidateLogin }: AuthformProps) {
           <div className="relative mt-2">
             <Input
               id="password"
-              placeholder="••••••••••••"
               type={passwords ? "password" : "text"}
+              onChange={handleChange}
+              name="password"
             />
             <button
               type="button"
@@ -85,8 +159,9 @@ export function Authform({ onCandidateLogin }: AuthformProps) {
           <div className="relative mt-2">
             <Input
               id="password"
-              placeholder="••••••••••••"
-              type={passwords ? "password" : "text"}
+              type={showConfirmPassword ? "password" : "text"}
+              onChange={handleChange}
+              name="confirmPassword"
             />
             <button
               type="button"
@@ -97,7 +172,7 @@ export function Authform({ onCandidateLogin }: AuthformProps) {
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
-                onClick={() => setpasswords(!passwords)}
+                onClick={() => setShowConfirmPassword(!showConfirmPassword)}
               >
                 <path
                   strokeLinecap="round"
